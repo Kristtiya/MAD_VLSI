@@ -1,21 +1,50 @@
-* SPICE3 file created from AND.ext - technology: sky130A
+**.subckt AND A B Y VP VN
+*.ipin A
+*.ipin B
+*.opin Y
+*.iopin VP
+*.iopin VN
+X1 B A net1 VN VP NAND
+X2 net1 Y VP VN inverter
+**.ends
 
-.subckt inverter VP VN A Y
-X0 Y A VP VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
-X1 Y A VN VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+* expanding   symbol:  /home/madvlsi/Documents/MP1/XSCHEM/NAND.sym # of pins=5
+
+.subckt NAND  B A Y VN VP
+*.ipin A
+*.iopin VN
+*.opin Y
+*.iopin VP
+*.ipin B
+XM1 Y A VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 Y B VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM3 Y A net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM4 net1 B VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
 .ends
 
-.subckt NAND VP VN A B Y
-X0 Y B VP VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
-X1 VP A Y VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
-X2 Y A a_200_10# VN sky130_fd_pr__nfet_01v8 ad=5e+11p pd=3e+06u as=3e+11p ps=2.6e+06u w=1e+06u l=150000u
-X3 a_200_10# B VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+
+* expanding   symbol:  /home/madvlsi/Documents/MP1/XSCHEM/inverter.sym # of pins=4
+
+.subckt inverter  A Y VP VN
+*.ipin A
+*.iopin VP
+*.opin Y
+*.iopin VN
+XM1 Y A VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
+XM2 Y A VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1 
 .ends
 
-
-* Top level circuit AND
-
-Xinverter_0 VP VN NAND_0/Y Y inverter
-XNAND_0 VP VN A B NAND_0/Y NAND
+** flattened .save nodes
 .end
-

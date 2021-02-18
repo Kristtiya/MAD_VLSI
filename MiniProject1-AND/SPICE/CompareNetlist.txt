@@ -128,7 +128,7 @@ Instance: sky130_fd_pr__pfet_01v80         |(no matching instance)
 Netlists do not match.
   Flattening non-matched subcircuits NAND NAND
 Subcircuit summary:
-Circuit 1: and.spice                       |Circuit 2: and_xschem.spice                
+Circuit 1: and.spice                       |Circuit 2: AND_xschem.spice                
 -------------------------------------------|-------------------------------------------
 inverter (1)                               |inverter (1)                               
 sky130_fd_pr__pfet_01v8 (2)                |sky130_fd_pr__pfet_01v8 (2)                
@@ -137,7 +137,7 @@ Number of devices: 5                       |Number of devices: 5
 Number of nets: 7                          |Number of nets: 7                          
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: and.spice                       |Circuit 2: and_xschem.spice                
+Circuit 1: and.spice                       |Circuit 2: AND_xschem.spice                
 
 ---------------------------------------------------------------------------------------
 Net: VN                                    |Net: net1                                  
@@ -176,7 +176,7 @@ Net: A                                     |(no matching net)
                                            |  inverter/VN = 1                          
 ---------------------------------------------------------------------------------------
 DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: and.spice                       |Circuit 2: and_xschem.spice                
+Circuit 1: and.spice                       |Circuit 2: AND_xschem.spice                
 
 ---------------------------------------------------------------------------------------
 (no matching instance)                     |Instance: NAND1/sky130_fd_pr__nfet_01v8M4  
