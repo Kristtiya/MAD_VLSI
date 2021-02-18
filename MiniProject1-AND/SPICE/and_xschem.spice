@@ -8,7 +8,7 @@ X1 B A net1 VN VP NAND
 X2 net1 Y VP VN inverter
 **.ends
 
-* expanding   symbol:  /home/madvlsi/Documents/MP1/XSCHEM/NAND.sym # of pins=5
+* expanding   symbol:  /home/madvlsi/Desktop/MAD_VLSI/MiniProject1-AND/XSCHEM/NAND.sym # of pins=5
 
 .subckt NAND  B A Y VN VP
 *.ipin A
@@ -22,7 +22,7 @@ XM1 Y A VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf *
 XM2 Y B VP VP sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
-XM3 Y A net1 net1 sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
+XM3 Y A net1 VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
 + pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
 + sa=0 sb=0 sd=0 mult=1 m=1 
 XM4 net1 B VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
@@ -31,7 +31,8 @@ XM4 net1 B VN VN sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/n
 .ends
 
 
-* expanding   symbol:  /home/madvlsi/Documents/MP1/XSCHEM/inverter.sym # of pins=4
+* expanding   symbol:  /home/madvlsi/Desktop/MAD_VLSI/MiniProject1-AND/XSCHEM/inverter.sym # of
+*+ pins=4
 
 .subckt inverter  A Y VP VN
 *.ipin A
