@@ -1,29 +1,18 @@
-Flattening unmatched subcell CSRLDFF in circuit ShiftRegister.spice (1)(4 instances)
 Equate elements:  no current cell.
 Equate elements:  no current cell.
 
 Subcircuit summary:
-Circuit 1: inverter                        |Circuit 2: inverter                        
+Circuit 1: DFF.spice                       |Circuit 2: CSRLDFF.spice                   
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (1)                |sky130_fd_pr__pfet_01v8 (1)                
-sky130_fd_pr__nfet_01v8 (1)                |sky130_fd_pr__nfet_01v8 (1)                
-Number of devices: 2                       |Number of devices: 2                       
-Number of nets: 4                          |Number of nets: 4                          
+sky130_fd_pr__nfet_01v8 (7)                |sky130_fd_pr__nfet_01v8 (7)                
+sky130_fd_pr__pfet_01v8 (7)                |sky130_fd_pr__pfet_01v8 (7)                
+Number of devices: 14                      |Number of devices: 14                      
+Number of nets: 11                         |Number of nets: 11                         
 ---------------------------------------------------------------------------------------
-Circuits match uniquely.
+Resolving automorphisms by property value.
+Resolving automorphisms by pin name.
 Netlists match uniquely.
-
-Subcircuit pins:
-Circuit 1: inverter                        |Circuit 2: inverter                        
--------------------------------------------|-------------------------------------------
-Dn                                         |Y **Mismatch**                             
-D                                          |A **Mismatch**                             
-VP                                         |VP                                         
-VN                                         |VN                                         
----------------------------------------------------------------------------------------
-Cell pin lists are equivalent.
-Device classes inverter and inverter are equivalent.
-Removing zero-valued device vsrc from cell ShiftRegister.spice makes a better match
-Making another compare attempt.
-Equate elements:  no current cell.
-The top level cell failed pin matching.
+Circuits match correctly.
+Cells have no pins;  pin matching not needed.
+Device classes DFF.spice and CSRLDFF.spice are equivalent.
+Circuits match uniquely.
