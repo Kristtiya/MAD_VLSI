@@ -1,0 +1,19 @@
+* SPICE3 file created from DFF.ext - technology: sky130A
+
+.subckt DFF D Dn clk VP VN Q Qn
+X0 VP a_n440_100# a_n490_n130# VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X1 Q Qn VN VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X2 a_n440_100# a_n400_650# D VP sky130_fd_pr__pfet_01v8 ad=1.5e+12p pd=9e+06u as=5.5e+11p ps=3.1e+06u w=1e+06u l=600000u
+X3 a_150_680# a_n400_650# VP VP sky130_fd_pr__pfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=150000u
+X4 a_n360_n130# a_n440_100# a_n490_n130# VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=1e+12p ps=6e+06u w=1e+06u l=150000u
+X5 Qn a_30_n860# a_n490_n130# VN sky130_fd_pr__nfet_01v8 ad=1e+12p pd=6e+06u as=0p ps=0u w=1e+06u l=600000u
+X6 a_n360_n130# a_n400_650# VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X7 a_150_680# Q Qn VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5e+11p ps=3e+06u w=1e+06u l=150000u
+X8 a_n440_100# a_n400_650# Dn VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=5.5e+11p ps=3.1e+06u w=1e+06u l=600000u
+X9 Q a_30_n860# a_n440_100# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=1e+12p ps=6e+06u w=1e+06u l=600000u
+X10 a_n440_100# a_n490_n130# VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X11 a_n440_100# a_n490_n130# a_n360_n130# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X12 VN Q Qn VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1e+06u l=150000u
+X13 Q Qn a_150_680# VP sky130_fd_pr__pfet_01v8 ad=5e+11p pd=3e+06u as=0p ps=0u w=1e+06u l=150000u
+.ends
+

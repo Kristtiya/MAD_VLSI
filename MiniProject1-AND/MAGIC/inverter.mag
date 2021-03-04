@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1613586473
+timestamp 1614788128
 << nwell >>
 rect -55 140 150 280
 << nmos >>
@@ -99,12 +99,12 @@ rect 0 20 30 90
 rect 50 20 150 90
 rect -55 10 150 20
 << labels >>
-rlabel locali -55 -20 -55 -20 7 A
-port 3 w
 rlabel locali 150 -20 150 -20 3 Y
 port 4 e
 rlabel metal1 -55 55 -55 55 7 VN
 port 2 w
 rlabel metal1 -55 210 -55 210 7 VP
 port 1 w
+rlabel locali -55 -20 -55 -20 7 A
+port 3 w
 << end >>
