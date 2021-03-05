@@ -1,6 +1,6 @@
 magic
 tech sky130A
-timestamp 1614901307
+timestamp 1614901737
 << nwell >>
 rect 280 570 485 835
 << nmos >>
@@ -95,7 +95,7 @@ rect 280 605 315 675
 rect 335 605 365 675
 rect 385 605 485 675
 rect 280 570 485 605
-rect 280 420 485 455
+rect 280 420 485 450
 rect 280 350 315 420
 rect 335 350 365 420
 rect 385 350 485 420
