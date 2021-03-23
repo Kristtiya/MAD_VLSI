@@ -13,7 +13,7 @@ N 500 -170 530 -170 { lab=Vout}
 N 305 -50 380 -50 { lab=#net1}
 N 305 -70 380 -70 { lab=#net2}
 N 305 -90 380 -90 { lab=#net3}
-N 185 -110 185 10 { lab=Vb}
+N 515 -170 515 -160 { lab=Vout}
 C {madvlsi/tt_models.sym} -57.5 -370 0 0 {
 name=TT_MODELS
 only_toplevel=false
@@ -32,7 +32,7 @@ C {devices/lab_pin.sym} 60 -120 1 0 {name=l7 sig_type=std_logic lab=Vb}
 C {devices/lab_pin.sym} 170 -110 0 0 {name=l8 sig_type=std_logic lab=Vb}
 C {madvlsi/isource.sym} 60 -90 0 0 {name=Ib
 value=1.2u}
-C {devices/code_shown.sym} 95 -360 0 0 {name=SPICE only_toplevel=false value=".dc V2 0 1.8 0.001 V1 0.36 1.8 0.36
+C {devices/code_shown.sym} 95 -360 0 0 {name=SPICE only_toplevel=false value=".dc V1 0 1.8 0.001 V2 0.36 1.8 0.36
 .save v(V1) v(V2) v(Vout)"}
 C {/home/madvlsi/Desktop/MAD_VLSI/MiniProject3-Cascode/XSCHEM/fcascodediffamp.sym} 400 -30 0 0 {name=X2}
 C {madvlsi/vdd.sym} 440 -210 0 0 {name=l5 lab=VDD}
@@ -48,7 +48,7 @@ C {devices/lab_pin.sym} 0 30 1 0 {name=l11 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} 70 30 1 0 {name=l13 sig_type=std_logic lab=V2}
 C {devices/lab_pin.sym} 360 -150 0 0 {name=l15 sig_type=std_logic lab=V2}
 C {devices/lab_pin.sym} 360 -170 0 0 {name=l16 sig_type=std_logic lab=V1}
-C {madvlsi/capacitor.sym} 185 40 0 0 {name=C1
+C {madvlsi/capacitor.sym} 515 -130 0 0 {name=C1
 value=2p
 m=1}
-C {madvlsi/gnd.sym} 185 70 0 0 {name=l17 lab=GND}
+C {madvlsi/gnd.sym} 515 -100 0 0 {name=l17 lab=GND}
