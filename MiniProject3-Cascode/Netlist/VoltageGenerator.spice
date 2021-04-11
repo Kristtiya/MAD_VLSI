@@ -1,0 +1,50 @@
+* SPICE3 file created from /home/madvlsi/Desktop/MAD_VLSI/MiniProject3-Cascode/Magic/VoltageGenerator.ext - technology: sky130A
+
+
+* Top level circuit /home/madvlsi/Desktop/MAD_VLSI/MiniProject3-Cascode/Magic/VoltageGenerator
+
+X0 VP Vb Vb VP sky130_fd_pr__pfet_01v8 ad=7.2e+13p pd=3e+08u as=1.2e+13p ps=5e+07u w=1.2e+07u l=500000u
+X1 VP Vb VN VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=3e+13p ps=1.25e+08u w=1.2e+07u l=500000u
+X2 a_4490_n3260# a_4090_n3260# VN VN sky130_fd_pr__nfet_01v8 ad=6e+12p pd=2.5e+07u as=6e+13p ps=2.5e+08u w=1.2e+07u l=500000u
+X3 a_5810_n3260# Vbn VN VN sky130_fd_pr__nfet_01v8 ad=6e+12p pd=2.5e+07u as=0p ps=0u w=1.2e+07u l=500000u
+X4 VN Vb VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X5 a_5990_n830# a_5920_n290# a_5810_n3260# VP sky130_fd_pr__pfet_01v8 ad=1.2e+13p pd=5e+07u as=6e+12p ps=2.5e+07u w=1.2e+07u l=500000u
+X6 Vbn Vbn a_4490_n3260# VN sky130_fd_pr__nfet_01v8 ad=6e+12p pd=2.5e+07u as=0p ps=0u w=1.2e+07u l=500000u
+X7 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X8 VP a_5920_n290# a_5990_n830# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X9 VP Vbn VN VN sky130_fd_pr__nfet_01v8 ad=3.6e+13p pd=1.5e+08u as=0p ps=0u w=1.2e+07u l=500000u
+X10 Vbn Vb VP VP sky130_fd_pr__pfet_01v8 ad=6e+12p pd=2.5e+07u as=0p ps=0u w=1.2e+07u l=500000u
+X11 VN VN Vbn VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X12 VN Vb VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X13 VN Vbn VP VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X14 a_5350_n3260# VN VN VN sky130_fd_pr__nfet_01v8 ad=6e+12p pd=2.5e+07u as=0p ps=0u w=1.2e+07u l=500000u
+X15 VN VN VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X16 VP Vb Vb VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X17 VP Vb a_4090_n3260# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=6e+12p ps=2.5e+07u w=1.2e+07u l=500000u
+X18 a_4090_n3260# VN VN VN sky130_fd_pr__nfet_01v8 ad=6e+12p pd=2.5e+07u as=0p ps=0u w=1.2e+07u l=500000u
+X19 VP VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X20 VN VN VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X21 VP Vbn VN VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X22 Vb Vb VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X23 VN Vbn VP VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X24 a_4090_n3260# VP VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X25 VP Vb VN VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X26 VP VP a_5990_n830# VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X27 Vb Vb VP VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X28 VN a_4090_n3260# a_4090_n3260# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+X29 VP VP Vbn VP sky130_fd_pr__pfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
+C0 VP a_5810_n3260# 3.15fF
+C1 VP a_4090_n3260# 2.81fF
+C2 VP Vbn 4.20fF
+C3 Vb VP 10.14fF
+C4 VP a_5990_n830# 3.12fF
+C5 a_5350_n3260# VN 3.33fF
+C6 a_4490_n3260# VN 2.41fF
+C7 a_5990_n830# VN 2.43fF
+C8 a_5810_n3260# VN 2.85fF
+C9 a_4090_n3260# VN 4.57fF
+C10 Vbn VN 9.82fF
+C11 Vb VN 5.35fF
+C12 VP VN 56.70fF
+.end
+
