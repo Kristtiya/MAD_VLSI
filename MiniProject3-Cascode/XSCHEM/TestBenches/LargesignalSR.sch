@@ -36,13 +36,13 @@ tran 0.01n 15000n
 save all
 set wr_singlescale
 set wr_vecnames
-wrdata ~/Desktop/MAD_VLSI/MiniProject3-Cascode/XSCHEM/Simulation/LS_SR.txt v(Vout)
+wrdata ~/Desktop/MAD_VLSI/MiniProject3-Cascode/XSCHEM/Simulation/LS_SR_up.txt v(Vout)
 .endc"}
 C {madvlsi/vdd.sym} 440 -210 0 0 {name=l5 lab=VDD}
 C {madvlsi/gnd.sym} 440 -10 0 0 {name=l9 lab=GND}
 C {devices/lab_pin.sym} 600 -170 2 0 {name=l10 sig_type=std_logic lab=Vout}
 C {madvlsi/vsource.sym} 0 60 0 0 {name=V1
-value="pwl(0n 0.6 1000ns .6 1001ns .8 5000ns .8 5001ns .6 10000ns .6 10001ns .4)"}
+value="pwl(0n 0.6 1000ns .6 1001ns .8 5000ns .8 5001ns .6 10000ns .6)"}
 C {madvlsi/gnd.sym} 0 90 0 0 {name=l12 lab=GND}
 C {devices/lab_pin.sym} 0 30 1 0 {name=l11 sig_type=std_logic lab=V1}
 C {devices/lab_pin.sym} 360 -170 0 0 {name=l16 sig_type=std_logic lab=V1}
