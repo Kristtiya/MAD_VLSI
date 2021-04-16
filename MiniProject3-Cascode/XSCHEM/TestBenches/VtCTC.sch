@@ -26,7 +26,7 @@ C {devices/lab_pin.sym} 60 -120 1 0 {name=l7 sig_type=std_logic lab=Vb}
 C {devices/lab_pin.sym} 170 -110 0 0 {name=l8 sig_type=std_logic lab=Vb}
 C {madvlsi/isource.sym} 60 -90 0 0 {name=Ib
 value=1.2u}
-C {devices/code_shown.sym} 100 -360 0 0 {name=SPICE only_toplevel=false value=".dc Vin 0 1.8 0.01 V2 0 1.2 0.3
+C {devices/code_shown.sym} 100 -360 0 0 {name=SPICE only_toplevel=false value=".dc Vin 0 1.8 0.01
 .save all"}
 C {madvlsi/vdd.sym} 440 -210 0 0 {name=l5 lab=VDD}
 C {madvlsi/gnd.sym} 440 -10 0 0 {name=l9 lab=GND}
