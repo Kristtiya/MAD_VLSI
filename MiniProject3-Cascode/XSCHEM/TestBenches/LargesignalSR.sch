@@ -31,7 +31,7 @@ C {devices/lab_pin.sym} 60 -120 1 0 {name=l7 sig_type=std_logic lab=Vb}
 C {devices/lab_pin.sym} 170 -110 0 0 {name=l8 sig_type=std_logic lab=Vb}
 C {madvlsi/isource.sym} 60 -90 0 0 {name=Ib
 value=1u}
-C {devices/code_shown.sym} 95 -430 0 0 {name=SPICE only_toplevel=false value=".control
+C {devices/code_shown.sym} 95 -400 0 0 {name=SPICE only_toplevel=false value=".control
 tran 0.01n 15000n
 save all
 set wr_singlescale
@@ -50,7 +50,7 @@ C {madvlsi/capacitor.sym} 535 -100 0 0 {name=C1
 value=2p
 m=1}
 C {madvlsi/gnd.sym} 535 -60 0 0 {name=l17 lab=GND}
-C {madvlsi/tt_models.sym} -40 -430 0 0 {
+C {madvlsi/tt_models.sym} -40 -400 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
