@@ -1,327 +1,40 @@
 Equate elements:  no current cell.
 Equate elements:  no current cell.
-Class VG_Schem.spice:  Merged 10 devices.
 Class VoltageGenerator.spice:  Merged 11 devices.
+Class VoltageGenerator1.spice:  Merged 11 devices.
 
 Subcircuit summary:
-Circuit 1: VG_Schem.spice                  |Circuit 2: VoltageGenerator.spice          
+Circuit 1: VoltageGenerator.spice          |Circuit 2: VoltageGenerator1.spice         
 -------------------------------------------|-------------------------------------------
-sky130_fd_pr__pfet_01v8 (11)               |sky130_fd_pr__pfet_01v8 (10) **Mismatch**  
+sky130_fd_pr__pfet_01v8 (10)               |sky130_fd_pr__pfet_01v8 (10)               
 sky130_fd_pr__nfet_01v8 (9)                |sky130_fd_pr__nfet_01v8 (9)                
-(no matching element)                      |c (13)                                     
-Number of devices: 20 **Mismatch**         |Number of devices: 32 **Mismatch**         
-Number of nets: 10                         |Number of nets: 10                         
+Number of devices: 19                      |Number of devices: 19                      
+Number of nets: 10 **Mismatch**            |Number of nets: 8 **Mismatch**             
 ---------------------------------------------------------------------------------------
 NET mismatches: Class fragments follow (with fanout counts):
-Circuit 1: VG_Schem.spice                  |Circuit 2: VoltageGenerator.spice          
+Circuit 1: VoltageGenerator.spice          |Circuit 2: VoltageGenerator1.spice         
 
 ---------------------------------------------------------------------------------------
-Net: VP                                    |Net: a_4490_n3260#                         
-  sky130_fd_pr__pfet_01v8/(1|3) = 10       |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/4 = 11           |  c/top = 1                                
-  sky130_fd_pr__pfet_01v8/2 = 4            |                                           
+Net: VP                                    |Net: VP                                    
+  sky130_fd_pr__pfet_01v8/(1|3) = 9        |  sky130_fd_pr__pfet_01v8/(1|3) = 10       
+  sky130_fd_pr__pfet_01v8/4 = 10           |  sky130_fd_pr__pfet_01v8/4 = 10           
+  sky130_fd_pr__pfet_01v8/2 = 3            |  sky130_fd_pr__pfet_01v8/2 = 4            
+                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
                                            |                                           
-Net: Vcn                                   |Net: a_4090_n3260#                         
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/2 = 2            
-  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  c/bottom = 1                             
-                                           |  c/top = 1                                
+Net: net3                                  |Net: VN                                    
+  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/(1|3) = 11       
+                                           |  sky130_fd_pr__nfet_01v8/4 = 9            
+                                           |  sky130_fd_pr__nfet_01v8/2 = 3            
                                            |                                           
-Net: net3                                  |Net: Vbn                                   
-  sky130_fd_pr__nfet_01v8/(1|3) = 3        |  sky130_fd_pr__nfet_01v8/2 = 3            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 2        
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 2        
-                                           |  c/bottom = 1                             
-                                           |  c/top = 1                                
-                                           |                                           
-Net: Vcp                                   |Net: a_5990_n830#                          
-  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 3        
-  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  c/bottom = 1                             
-  sky130_fd_pr__pfet_01v8/2 = 1            |  c/top = 1                                
-                                           |                                           
-Net: net4                                  |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 3        |                                           
+Net: Vcp                                   |(no matching net)                          
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |                                           
+  sky130_fd_pr__pfet_01v8/2 = 1            |                                           
                                            |                                           
 Net: VN                                    |(no matching net)                          
   sky130_fd_pr__nfet_01v8/4 = 9            |                                           
   sky130_fd_pr__nfet_01v8/(1|3) = 8        |                                           
   sky130_fd_pr__nfet_01v8/2 = 3            |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: a_5350_n3260#                         
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  c/top = 1                                
-                                           |                                           
-(no matching net)                          |Net: a_5920_n290#                          
-                                           |  sky130_fd_pr__pfet_01v8/2 = 2            
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching net)                          |Net: VN                                    
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 9        
-                                           |  sky130_fd_pr__nfet_01v8/4 = 9            
-                                           |  sky130_fd_pr__nfet_01v8/2 = 4            
-                                           |  c/bottom = 8                             
-                                           |                                           
-(no matching net)                          |Net: VP                                    
-                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 10       
-                                           |  sky130_fd_pr__pfet_01v8/4 = 10           
-                                           |  sky130_fd_pr__pfet_01v8/2 = 4            
-                                           |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
-                                           |  c/top = 5                                
-                                           |  c/bottom = 1                             
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Net: net2                                  |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__nfet_01v8/2 = 2            |                                           
-                                           |                                           
-Net: Vb                                    |(no matching net)                          
-  sky130_fd_pr__pfet_01v8/(1|3) = 2        |                                           
-  sky130_fd_pr__pfet_01v8/2 = 4            |                                           
----------------------------------------------------------------------------------------
-DEVICE mismatches: Class fragments follow (with node fanout counts):
-Circuit 1: VG_Schem.spice                  |Circuit 2: VoltageGenerator.spice          
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8M6        |Instance: sky130_fd_pr__pfet_01v80         
-  (1,3) = (25,3)                           |  (1,3) = (31,7)                           
-  2 = 6                                    |  2 = 7                                    
-  4 = 25                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M15       |Instance: sky130_fd_pr__pfet_01v81         
-  (1,3) = (25,7)                           |  (1,3) = (31,31)                          
-  2 = 6                                    |  2 = 7                                    
-  4 = 25                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M20       |Instance: sky130_fd_pr__pfet_01v85         
-  (1,3) = (25,3)                           |  (1,3) = (5,4)                            
-  2 = 4                                    |  2 = 2                                    
-  4 = 25                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M21       |Instance: sky130_fd_pr__pfet_01v87         
-  (1,3) = (4,3)                            |  (1,3) = (31,31)                          
-  2 = 4                                    |  2 = 31                                   
-  4 = 25                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M25       |Instance: sky130_fd_pr__pfet_01v88         
-  (1,3) = (25,7)                           |  (1,3) = (31,5)                           
-  2 = 25                                   |  2 = 2                                    
-  4 = 25                                   |  4 = 31                                   
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v824        
-                                           |  (1,3) = (31,8)                           
-                                           |  2 = 31                                   
-                                           |  4 = 31                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v826        
-                                           |  (1,3) = (31,5)                           
-                                           |  2 = 31                                   
-                                           |  4 = 31                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v829        
-                                           |  (1,3) = (31,9)                           
-                                           |  2 = 31                                   
-                                           |  4 = 31                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: c0                               
-                                           |  top = 31                                 
-                                           |  bottom = 4                               
-                                           |                                           
-(no matching instance)                     |Instance: c1                               
-                                           |  top = 31                                 
-                                           |  bottom = 8                               
-                                           |                                           
-(no matching instance)                     |Instance: c2                               
-                                           |  top = 31                                 
-                                           |  bottom = 9                               
-                                           |                                           
-(no matching instance)                     |Instance: c4                               
-                                           |  top = 31                                 
-                                           |  bottom = 5                               
-                                           |                                           
-(no matching instance)                     |Instance: c5                               
-                                           |  top = 2                                  
-                                           |  bottom = 31                              
-                                           |                                           
-(no matching instance)                     |Instance: c6                               
-                                           |  top = 3                                  
-                                           |  bottom = 31                              
-                                           |                                           
-(no matching instance)                     |Instance: c7                               
-                                           |  top = 5                                  
-                                           |  bottom = 31                              
-                                           |                                           
-(no matching instance)                     |Instance: c9                               
-                                           |  top = 8                                  
-                                           |  bottom = 31                              
-                                           |                                           
-(no matching instance)                     |Instance: c10                              
-                                           |  top = 9                                  
-                                           |  bottom = 31                              
-                                           |                                           
-(no matching instance)                     |Instance: c8                               
-                                           |  top = 4                                  
-                                           |  bottom = 31                              
-                                           |                                           
-(no matching instance)                     |Instance: c12                              
-                                           |  top = 31                                 
-                                           |  bottom = 31                              
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: c11                              
-                                           |  top = 7                                  
-                                           |  bottom = 31                              
-                                           |                                           
-(no matching instance)                     |Instance: c3                               
-                                           |  top = 7                                  
-                                           |  bottom = 31                              
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v817        
-                                           |  (1,3) = (31,8)                           
-                                           |  2 = 7                                    
-                                           |  4 = 31                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v810        
-                                           |  (1,3) = (31,9)                           
-                                           |  2 = 7                                    
-                                           |  4 = 31                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8M29       |(no matching instance)                     
-  (1,3) = (25,6)                           |                                           
-  2 = 25                                   |                                           
-  4 = 25                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M27       |(no matching instance)                     
-  (1,3) = (25,6)                           |                                           
-  2 = 25                                   |                                           
-  4 = 25                                   |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8M23       |(no matching instance)                     
-  (1,3) = (25,25)                          |                                           
-  2 = 25                                   |                                           
-  4 = 25                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M22       |(no matching instance)                     
-  (1,3) = (3,3)                            |                                           
-  2 = 3                                    |                                           
-  4 = 25                                   |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__pfet_01v8M10       |(no matching instance)                     
-  (1,3) = (25,6)                           |                                           
-  2 = 6                                    |                                           
-  4 = 25                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: sky130_fd_pr__pfet_01v8M1        |(no matching instance)                     
-  (1,3) = (25,6)                           |                                           
-  2 = 6                                    |                                           
-  4 = 25                                   |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__nfet_01v8M30       |Instance: sky130_fd_pr__nfet_01v815        
-  (1,3) = (20,7)                           |  (1,3) = (31,31)                          
-  2 = 20                                   |  2 = 31                                   
-  4 = 20                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8M24       |Instance: sky130_fd_pr__nfet_01v814        
-  (1,3) = (20,6)                           |  (1,3) = (31,2)                           
-  2 = 20                                   |  2 = 31                                   
-  4 = 20                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8M16       |Instance: sky130_fd_pr__nfet_01v89         
-  (1,3) = (20,3)                           |  (1,3) = (31,31)                          
-  2 = 7                                    |  2 = 9                                    
-  4 = 20                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8M14       |Instance: sky130_fd_pr__nfet_01v86         
-  (1,3) = (20,4)                           |  (1,3) = (9,3)                            
-  2 = 7                                    |  2 = 9                                    
-  4 = 20                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8M13       |Instance: sky130_fd_pr__nfet_01v83         
-  (1,3) = (20,7)                           |  (1,3) = (31,4)                           
-  2 = 7                                    |  2 = 9                                    
-  4 = 20                                   |  4 = 31                                   
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8M12       |(no matching instance)                     
-  (1,3) = (20,3)                           |                                           
-  2 = 6                                    |                                           
-  4 = 20                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8M11       |(no matching instance)                     
-  (1,3) = (6,3)                            |                                           
-  2 = 6                                    |                                           
-  4 = 20                                   |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-Instance: sky130_fd_pr__nfet_01v8M2        |(no matching instance)                     
-  (1,3) = (3,3)                            |                                           
-  2 = 3                                    |                                           
-  4 = 20                                   |                                           
-                                           |                                           
-                                           |                                           
-Instance: sky130_fd_pr__nfet_01v8M28       |(no matching instance)                     
-  (1,3) = (20,20)                          |                                           
-  2 = 20                                   |                                           
-  4 = 20                                   |                                           
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v811        
-                                           |  (1,3) = (31,9)                           
-                                           |  2 = 31                                   
-                                           |  4 = 31                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v818        
-                                           |  (1,3) = (31,8)                           
-                                           |  2 = 31                                   
-                                           |  4 = 31                                   
-                                           |                                           
----------------------------------------------------------------------------------------
-
----------------------------------------------------------------------------------------
-(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v82         
-                                           |  (1,3) = (31,3)                           
-                                           |  2 = 8                                    
-                                           |  4 = 31                                   
-                                           |                                           
-                                           |                                           
-(no matching instance)                     |Instance: sky130_fd_pr__nfet_01v828        
-                                           |  (1,3) = (31,8)                           
-                                           |  2 = 8                                    
-                                           |  4 = 31                                   
-                                           |                                           
 ---------------------------------------------------------------------------------------
 Netlists do not match.
 The top level cell failed pin matching.

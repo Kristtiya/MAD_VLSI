@@ -1,7 +1,7 @@
-* SPICE3 file created from /home/madvlsi/Desktop/MAD_VLSI/MiniProject3-Cascode/Magic/Amplifier.ext - technology: sky130A
+* SPICE3 file created from Amplifier.ext - technology: sky130A
 
 
-* Top level circuit /home/madvlsi/Desktop/MAD_VLSI/MiniProject3-Cascode/Magic/Amplifier
+* Top level circuit Amplifier
 
 X0 VP Vbp a_3170_380# VP sky130_fd_pr__pfet_01v8 ad=2.4e+13p pd=1e+08u as=1.2e+13p ps=5e+07u w=1.2e+07u l=500000u
 X1 Vout Vcp a_4530_380# VP sky130_fd_pr__pfet_01v8 ad=6e+12p pd=2.5e+07u as=6e+12p ps=2.5e+07u w=1.2e+07u l=500000u
@@ -18,17 +18,5 @@ X11 a_3410_n2320# V1 a_3170_380# VP sky130_fd_pr__pfet_01v8 ad=6e+12p pd=2.5e+07
 X12 VN Vbn a_3410_n2320# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
 X13 a_3010_n2320# Vbn VN VN sky130_fd_pr__nfet_01v8 ad=6e+12p pd=2.5e+07u as=0p ps=0u w=1.2e+07u l=500000u
 X14 Vout Vcn a_3010_n2320# VN sky130_fd_pr__nfet_01v8 ad=0p pd=0u as=0p ps=0u w=1.2e+07u l=500000u
-C0 VP Vout 2.39fF
-C1 VP a_4530_380# 2.36fF
-C2 VP a_3930_n2320# 3.27fF
-C3 VP a_4130_380# 2.35fF
-C4 VP a_3170_380# 2.33fF
-C5 a_3410_n2320# VN 5.10fF
-C6 a_3010_n2320# VN 5.01fF
-C7 Vcn VN 2.27fF
-C8 Vbn VN 2.00fF
-C9 Vout VN 2.81fF
-C10 a_3930_n2320# VN 3.03fF
-C11 VP VN 26.02fF
 .end
 
