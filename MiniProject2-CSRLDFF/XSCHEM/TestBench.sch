@@ -4,7 +4,7 @@ K {}
 V {}
 S {}
 E {}
-N 385 -210 400 -210 { lab=#net1}
+N 385 -210 400 -210 { lab=Dn}
 N 265 -210 290 -210 { lab=D}
 N 265 -300 265 -210 { lab=D}
 N 265 -300 400 -300 { lab=D}
@@ -22,16 +22,16 @@ N 560 -300 590 -300 { lab=Q3}
 N 480 -130 670 -130 { lab=CLK}
 N 670 -130 860 -130 { lab=CLK}
 N 860 -130 1050 -130 { lab=CLK}
-N 560 -210 590 -210 { lab=#net2}
-N 750 -210 780 -210 { lab=#net3}
-N 940 -210 970 -210 { lab=#net4}
+N 560 -210 590 -210 { lab=Qn3}
+N 750 -210 780 -210 { lab=Qn2}
+N 940 -210 970 -210 { lab=Qn1}
 C {devices/code_shown.sym} 150 -500 0 0 {name=SPICE only_toplevel=false value=".ic v(Q0)=0 v(Q3)=0 v(Q2)=0 v(Q1)=0 
-.ic v(x1.net3)=1
-.tran 0.01n 200n
+.ic v(Qn3)=1 v(Qn2)=1 v(Qn1)=1 v(Qn0)=1
+.tran 0.01n 300n
 .save all"}
 C {devices/gnd.sym} 35 -255 0 0 {name=l2 lab=GND}
 C {madvlsi/vsource.sym} 35 -285 0 0 {name=Vdd
-value=1}
+value=1.8}
 C {devices/gnd.sym} 35 -160 0 0 {name=l5 lab=GND}
 C {madvlsi/vsource.sym} 35 -190 0 0 {name=Vclk
 value="pulse(0 1.8 1n 1n 1n 15n 32n)"}
@@ -63,9 +63,14 @@ C {devices/gnd.sym} 440 -160 0 0 {name=l9 lab=GND}
 C {devices/gnd.sym} 630 -160 0 0 {name=l10 lab=GND}
 C {devices/gnd.sym} 820 -160 0 0 {name=l17 lab=GND}
 C {devices/gnd.sym} 1010 -160 0 0 {name=l19 lab=GND}
-C {madvlsi/tt_models.sym} 10 -510 0 0 {
+C {madvlsi/tt_models.sym} 30 -510 0 0 {
 name=TT_MODELS
 only_toplevel=false
 value=".option wnflag=1
+.param MC_SWITCH=0.0
 .lib ~/skywater/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models/sky130.lib.spice tt"
 }
+C {devices/lab_pin.sym} 570 -210 1 0 {name=l24 sig_type=std_logic lab=Qn3}
+C {devices/lab_pin.sym} 760 -210 1 0 {name=l25 sig_type=std_logic lab=Qn2}
+C {devices/lab_pin.sym} 950 -210 1 0 {name=l26 sig_type=std_logic lab=Qn1}
+C {devices/lab_pin.sym} 390 -210 1 0 {name=l27 sig_type=std_logic lab=Dn}
